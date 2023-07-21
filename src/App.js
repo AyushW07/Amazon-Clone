@@ -8,6 +8,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Navbar />} />
+          <Route path="/checkout" />
         </Routes>
       </div>
     </Router>
