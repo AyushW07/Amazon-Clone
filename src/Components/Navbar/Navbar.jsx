@@ -19,7 +19,11 @@ function Navbar() {
       </Link>
 
       <div className={styles.search_container}>
-        <input type="text" className={styles.searchbar} />
+        <input
+          type="text"
+          className={styles.searchbar}
+          placeholder="Search..."
+        />
         <SearchIcon className={styles.searchIcon} />
       </div>
 
