@@ -42,7 +42,7 @@ function Navbar() {
           </div>
         </Link>
 
-        <Link to="/checkout" className={styles.linktag}>
+        <Link to="/cart" className={styles.linktag}>
           <div className={styles.cart}>
             <ShoppingCartIcon />
             <span className={styles.cart_count}>0</span>

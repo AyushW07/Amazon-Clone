@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Components/HomePage/Homepage";
-import Products from "./Components/Products/Products";
+import Cart from "./Components/Cart/Cart";
 
 function App() {
   return (
@@ -15,11 +15,10 @@ function App() {
               <>
                 <Navbar />
                 <Homepage />
-                <Products />
               </>
             }
           />
-          <Route path="/checkout" element={<Navbar />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </div>
     </Router>
