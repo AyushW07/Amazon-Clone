@@ -3,8 +3,11 @@ import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { useStateValue } from "../../StateProvider";
 
 function Navbar() {
+  const [{ cart }, dispatch] = useStateValue();
+
   return (
     <nav className={styles.navbar}>
       <Link to="/">
@@ -45,7 +48,7 @@ function Navbar() {
         <Link to="/cart" className={styles.linktag}>
           <div className={styles.cart}>
             <ShoppingCartIcon />
-            <span className={styles.cart_count}>0</span>
+            <span className={styles.cart_count}>{cart?.length}</span>
           </div>
         </Link>
       </div>
