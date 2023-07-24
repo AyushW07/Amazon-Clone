@@ -30,7 +30,7 @@ function Navbar() {
       <div className={styles.navbar_links}>
         <Link to="/login" className={styles.linktag}>
           <div className={styles.links_options}>
-            <span className={styles.line1}>Hello, Ayush</span>
+            <span className={styles.line1}>Hello, Guest</span>
             <span className={styles.line2}>Sign In</span>
           </div>
         </Link>
