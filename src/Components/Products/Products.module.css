@@ -35,4 +35,8 @@
 .btn {
   background-color: #ffd814;
   border: none;
+  height: 31px;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
 }

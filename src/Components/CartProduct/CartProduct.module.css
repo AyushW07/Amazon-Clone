@@ -25,8 +25,10 @@
 
 .btn {
   background-color: #ffd814;
-  border-radius: 5px;
+  border: none;
+  height: 31px;
+  width: 130px;
   margin-top: 10px;
-  border: 1px solid;
-  color: black;
+  border-radius: 10px;
+  cursor: pointer;
 }
