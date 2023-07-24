@@ -8,7 +8,7 @@ function SubTotal() {
   const [{ cart }, dispatch] = useStateValue();
 
   // console.log(cart);
-  console.log(getCartTotal(cart));
+  // console.log(getCartTotal(cart));
 
   return (
     <div className={styles.subtotal}>
@@ -28,7 +28,7 @@ function SubTotal() {
         value={getCartTotal(cart)}
         displayType={"text"}
         thousandSeparator={true}
-        prefix={"$"}
+        prefix={"\u20B9"}
       />
 
       <button className={styles.btn}>Proceed to Buy</button>
