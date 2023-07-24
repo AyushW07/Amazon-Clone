@@ -1,0 +1,32 @@
+.CartProduct {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.product_image {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+
+.product_info {
+  padding-left: 20px;
+}
+
+.product_title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product_rating {
+  display: flex;
+}
+
+.btn {
+  background-color: #ffd814;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid;
+  color: black;
+}
