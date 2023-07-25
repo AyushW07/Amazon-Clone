@@ -5,16 +5,15 @@ import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useStateValue } from "../../StateProvider";
 import { auth } from "../../firebase";
-import { onAuthStateChanged } from "firebase/auth";
 
 function Navbar() {
-  const [{ cart }, dispatch] = useStateValue();
+  const [{ cart, user }, dispatch] = useStateValue();
 
-  const [user, setUser] = useState({});
-
-  onAuthStateChanged(auth, (currentUser) => {
-    setUser(currentUser);
-  });
+  const handleAuth = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -36,10 +35,12 @@ function Navbar() {
       </div>
 
       <div className={styles.navbar_links}>
-        <Link to="/" className={styles.linktag}>
-          <div className={styles.links_options}>
+        <Link to={!user && "/"} className={styles.linktag}>
+          <div onClick={handleAuth} className={styles.links_options}>
             <span className={styles.line1}>Hello, {user.email}</span>
-            <span className={styles.line2}>Sign Out</span>
+            <span className={styles.line2}>
+              {user ? "Sign Out" : "Sign In"}
+            </span>
           </div>
         </Link>
 

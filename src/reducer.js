@@ -1,5 +1,6 @@
 export const initialState = {
   cart: [],
+  user: null,
 };
 
 export const getCartTotal = (cart) =>
@@ -34,7 +35,13 @@ const reducer = (state, action) => {
         cart: newCart,
       };
 
-    //! Removes all the product with same ids
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
+      };
+
+    //! Below code removes all the products with same ids thats why we implemented above code
     // return {
     //   ...state,
     //   cart: state.cart.filter((item) => item.id !== action.id),

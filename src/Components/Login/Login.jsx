@@ -18,7 +18,7 @@ function Login() {
       const user = await signInWithEmailAndPassword(auth, email, password);
       console.log(user);
       if (auth) {
-        navigate("/");
+        navigate("/homepage");
       }
     } catch (error) {
       console.log(error.message);
@@ -31,7 +31,7 @@ function Login() {
       const user = await createUserWithEmailAndPassword(auth, email, password);
       console.log(user);
       if (auth) {
-        navigate("/");
+        navigate("/homepage");
       }
     } catch (error) {
       console.log(error.message);
@@ -40,7 +40,7 @@ function Login() {
 
   return (
     <div className={styles.login}>
-      <Link to="/">
+      <Link to="/homepage">
         <img
           className={styles.logo}
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png"
