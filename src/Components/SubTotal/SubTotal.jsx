@@ -3,9 +3,16 @@ import styles from "./SubTotal.module.css";
 import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "../../StateProvider";
 import { getCartTotal } from "../../reducer";
+import { useNavigate } from "react-router-dom";
 
 function SubTotal() {
   const [{ cart }, dispatch] = useStateValue();
+
+  const navigate = useNavigate();
+
+  const onProceed = () => {
+    navigate("/payment");
+  };
 
   // console.log(cart);
   // console.log(getCartTotal(cart));
@@ -31,7 +38,9 @@ function SubTotal() {
         prefix={"\u20B9"}
       />
 
-      <button className={styles.btn}>Proceed to Buy</button>
+      <button onClick={onProceed} className={styles.btn}>
+        Proceed to Buy
+      </button>
     </div>
   );
 }
