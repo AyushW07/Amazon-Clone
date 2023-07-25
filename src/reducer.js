@@ -9,7 +9,7 @@ export const getCartTotal = (cart) =>
 // console.log(getCartTotal);
 
 const reducer = (state, action) => {
-  // console.log(action);
+  console.log(action);
   switch (action.type) {
     case "ADD_TO_CART":
       return {
@@ -27,7 +27,7 @@ const reducer = (state, action) => {
       if (index >= 0) {
         newCart.splice(index, 1);
       } else {
-        console.warn("cant remove product");
+        console.warn("Cannot remove product");
       }
 
       return {

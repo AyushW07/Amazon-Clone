@@ -5,7 +5,7 @@ import { useStateValue } from "../../StateProvider";
 import CartProduct from "../CartProduct/CartProduct";
 
 function Cart() {
-  const [{ cart, user }, dispatch] = useStateValue();
+  const [{ cart }, dispatch] = useStateValue();
 
   return (
     <div className={styles.cart}>

@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Components/HomePage/Homepage";
 import Cart from "./Components/Cart/Cart";
 import Login from "./Components/Login/Login";
-import Protected from "./protected";
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
@@ -37,12 +36,10 @@ function App() {
           <Route
             path="/homepage"
             element={
-              // <Protected>
               <>
                 <Navbar />
                 <Homepage />
               </>
-              // </Protected>
             }
           />
           <Route
