@@ -10,8 +10,9 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
+          <Route path="/" element={<Login />} />
           <Route
-            path="/"
+            path="/homepage"
             element={
               <>
                 <Navbar />
@@ -28,7 +29,6 @@ function App() {
               </>
             }
           />
-          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
     </Router>

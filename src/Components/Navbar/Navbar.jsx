@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useStateValue } from "../../StateProvider";
+import { auth } from "../../firebase";
+import { onAuthStateChanged } from "firebase/auth";
 
 function Navbar() {
   const [{ cart }, dispatch] = useStateValue();
 
+  const [user, setUser] = useState({});
+
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  });
+
   return (
     <nav className={styles.navbar}>
-      <Link to="/">
+      <Link to="/homepage">
         <img
           className={styles.logo}
           src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
@@ -28,21 +36,21 @@ function Navbar() {
       </div>
 
       <div className={styles.navbar_links}>
-        <Link to="/login" className={styles.linktag}>
+        <Link to="/" className={styles.linktag}>
           <div className={styles.links_options}>
-            <span className={styles.line1}>Hello, Guest</span>
-            <span className={styles.line2}>Sign In</span>
+            <span className={styles.line1}>Hello, {user.email}</span>
+            <span className={styles.line2}>Sign Out</span>
           </div>
         </Link>
 
-        <Link to="/" className={styles.linktag}>
+        <Link to="/homepage" className={styles.linktag}>
           <div className={styles.links_options}>
             <span className={styles.line1}>Returns</span>
             <span className={styles.line2}>& Orders</span>
           </div>
         </Link>
 
-        <Link to="/" className={styles.linktag}>
+        <Link to="/homepage" className={styles.linktag}>
           <div className={styles.links_options}>
             <span className={styles.line1}>Your</span>
             <span className={styles.line2}>Prime</span>

@@ -1,4 +1,4 @@
-import firebase from "firebase/compat/app";
+// import firebase from "firebase/compat/app";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
@@ -15,8 +15,8 @@ const firebaseConfig = {
 
 const firebaseApp = initializeApp(firebaseConfig);
 
-const db = getFirestore();
+const db = getFirestore(firebaseApp);
 
-const auth = getAuth();
+export const auth = getAuth(firebaseApp);
 
-export { db, auth };
+// export { db, auth };
