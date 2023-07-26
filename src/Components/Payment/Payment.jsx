@@ -7,11 +7,11 @@ import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import { getCartTotal } from "../../reducer";
 import { useEffect } from "react";
-import axios from "axios";
+import axios from "../../axios";
 
 function Payment() {
   const navigate = useNavigate();
-  const [{ cart, user }] = useStateValue();
+  const [{ cart, user }, dispatch] = useStateValue();
 
   const stripe = useStripe();
   const elements = useElements();
@@ -36,6 +36,8 @@ function Payment() {
     getClientSecret();
   }, [cart]);
 
+  console.log("Client Secret --", clientSecret);
+
   const handleOnSubmit = async (e) => {
     e.preventDefault();
     setProcessing(true);
@@ -50,6 +52,11 @@ function Payment() {
         setSucceeded(true);
         setError(null);
         setProcessing(false);
+
+        dispatch({
+          type: "EMPTY_CART",
+        });
+
         navigate("/orders");
       });
   };
