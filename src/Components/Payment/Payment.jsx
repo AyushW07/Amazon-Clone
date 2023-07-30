@@ -20,7 +20,7 @@ function Payment() {
   const [disabled, setDisabled] = useState(true);
   const [processing, setProcessing] = useState("");
   const [succeeded, setSucceeded] = useState(false);
-  const [clientSecret, setClientSecret] = useState(false);
+  const [clientSecret, setClientSecret] = useState(true);
 
   useEffect(() => {
     // generating a special stripe secret which allows to charge customers
@@ -48,7 +48,7 @@ function Payment() {
           card: elements.getElement(CardElement),
         },
       })
-      .then(({ paymentIntent }) => {
+      .then(() => {
         setSucceeded(true);
         setError(null);
         setProcessing(false);
@@ -56,8 +56,8 @@ function Payment() {
         dispatch({
           type: "EMPTY_CART",
         });
-
-        navigate("/orders");
+        alert("Payment Successfull !!!");
+        navigate("/homepage");
       });
   };
 
@@ -120,7 +120,10 @@ function Payment() {
                   thousandSeparator={true}
                   prefix={"\u20B9"}
                 />
-                <button disabled={processing || disabled || succeeded}>
+                <button
+                  className={styles.btn}
+                  disabled={processing || disabled || succeeded}
+                >
                   <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
                 </button>
               </div>
