@@ -21,6 +21,7 @@ function Login() {
         navigate("/homepage");
       }
     } catch (error) {
+      alert(error.message);
       console.log(error.message);
     }
   };
@@ -34,6 +35,7 @@ function Login() {
         navigate("/homepage");
       }
     } catch (error) {
+      alert(error.message);
       console.log(error.message);
     }
   };

@@ -16,7 +16,7 @@ const promise = loadStripe(
 );
 
 function App() {
-  const [dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./SubTotal.module.css";
-import CurrencyFormat from "react-currency-format";
+import { NumericFormat } from "react-number-format";
 import { useStateValue } from "../../StateProvider";
 import { getCartTotal } from "../../reducer";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +19,7 @@ function SubTotal() {
 
   return (
     <div className={styles.subtotal}>
-      <CurrencyFormat
+      <NumericFormat
         renderText={(value) => (
           <>
             <p>

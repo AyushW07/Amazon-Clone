@@ -4,7 +4,7 @@ import { useStateValue } from "../../StateProvider";
 import CartProduct from "../CartProduct/CartProduct";
 import { Link, useNavigate } from "react-router-dom";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
-import CurrencyFormat from "react-currency-format";
+import { NumericFormat } from "react-number-format";
 import { getCartTotal } from "../../reducer";
 import { useEffect } from "react";
 import axios from "../../axios";
@@ -56,7 +56,7 @@ function Payment() {
         dispatch({
           type: "EMPTY_CART",
         });
-        alert("Payment Successfull !!!");
+        alert("Payment Successfull!!! Redirecting to Homepage.");
         navigate("/homepage");
       });
   };
@@ -112,7 +112,7 @@ function Payment() {
               <CardElement onChange={handleOnChange} />
 
               <div className={styles.price}>
-                <CurrencyFormat
+                <NumericFormat
                   renderText={(value) => <h3>Total Order : {value} </h3>}
                   decimalScale={2}
                   value={getCartTotal(cart)}
