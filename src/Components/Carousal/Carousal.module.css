@@ -1,0 +1,7 @@
+.carousel {
+  width: 1520px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+  z-index: -1;
+  margin-bottom: -340px;
+  cursor: pointer;
+}

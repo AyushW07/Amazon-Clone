@@ -56,7 +56,7 @@ function Payment() {
         dispatch({
           type: "EMPTY_CART",
         });
-        alert("Payment Successfull!!! Redirecting to Homepage.");
+        alert("Payment Successfull!!! Redirecting to Homepage");
         navigate("/homepage");
       });
   };
