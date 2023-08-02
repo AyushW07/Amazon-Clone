@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Products.module.css";
 import { useStateValue } from "../../StateProvider";
-import { Button } from "@mui/material";
 
 function Products({ id, title, price, rating, image }) {
   const [{ cart }, dispatch] = useStateValue();
@@ -38,9 +37,9 @@ function Products({ id, title, price, rating, image }) {
         </div>
       </div>
       <img src={image} alt="" />
-      <Button className={styles.btn} onClick={addToCart}>
+      <button className={styles.btn} onClick={addToCart}>
         Add To Cart
-      </Button>
+      </button>
     </div>
   );
 }

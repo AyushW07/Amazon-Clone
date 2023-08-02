@@ -39,11 +39,10 @@
 }
 
 .btn {
-  background-color: #ffd814 !important;
-  color: black !important;
-  border: none !important;
-  height: 31px !important;
-  width: 200px !important;
-  border-radius: 10px !important;
-  cursor: pointer !important;
+  background-color: #ffd814;
+  border: none;
+  height: 31px;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
 }
