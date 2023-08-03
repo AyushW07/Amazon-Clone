@@ -7,6 +7,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import CloseIcon from "@mui/icons-material/Close";
 import { useStateValue } from "../../StateProvider";
 import { auth } from "../../firebase";
 
@@ -121,6 +122,7 @@ function Navbar() {
       </nav>
 
       <aside className={styles.sidebar}>
+        <CloseIcon className={styles.close_icon} />
         <div className={styles.ext_container}>
           <div className={styles.users}>
             <AccountCircleIcon className={styles.users_icon} />
