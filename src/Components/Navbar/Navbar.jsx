@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
@@ -18,6 +18,12 @@ function Navbar() {
     if (user) {
       auth.signOut();
     }
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -105,7 +111,7 @@ function Navbar() {
 
       <nav className={styles.navbar_down}>
         <ul>
-          <li className={styles.menu_all}>
+          <li className={styles.menu_all} onClick={handleMenu}>
             <MenuIcon className={styles.menu_icon} />
             All
           </li>
@@ -121,8 +127,8 @@ function Navbar() {
         </ul>
       </nav>
 
-      <aside className={styles.sidebar}>
-        <CloseIcon className={styles.close_icon} />
+      <aside className={`${styles.sidebar} ${isOpen ? styles.open : ""}`}>
+        <CloseIcon className={styles.close_icon} onClick={handleMenu} />
         <div className={styles.ext_container}>
           <div className={styles.users}>
             <AccountCircleIcon className={styles.users_icon} />

@@ -46,3 +46,142 @@ Before we get started, keep in mind:
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 [error] 
 [error] Error: Failed to get Firebase project clone-67d4c. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-08-03T18:18:55.550Z] ----------------------------------------------------------------------
+[debug] [2023-08-03T18:18:55.553Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-08-03T18:18:55.554Z] CLI Version:   12.4.5
+[debug] [2023-08-03T18:18:55.555Z] Platform:      win32
+[debug] [2023-08-03T18:18:55.556Z] Node Version:  v18.15.0
+[debug] [2023-08-03T18:18:55.557Z] Time:          Thu Aug 03 2023 23:48:55 GMT+0530 (India Standard Time)
+[debug] [2023-08-03T18:18:55.557Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-03T18:18:55.562Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-08-03T18:18:55.750Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-03T18:18:55.751Z] > authorizing via signed-in user (ayushwasnik999@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-08-03T18:18:55.782Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-03T18:18:55.783Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-03T18:18:55.783Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project clone-67d4c. This may result in unexpected behavior. 
+[debug] [2023-08-03T18:18:55.812Z] [hub] writing locator at C:\Users\ASUS\AppData\Local\Temp\hub-clone-67d4c.json
+[debug] [2023-08-03T18:18:55.843Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-03T18:18:55.843Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-03T18:18:55.843Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-08-03T18:18:55.849Z] defaultcredentials: writing to file C:\Users\ASUS\AppData\Roaming\firebase\ayushwasnik999_gmail_com_application_default_credentials.json
+[debug] [2023-08-03T18:18:55.853Z] Setting GAC to C:\Users\ASUS\AppData\Roaming\firebase\ayushwasnik999_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\ASUS\\AppData\\Roaming\\firebase\\ayushwasnik999_gmail_com_application_default_credentials.json"}}
+[debug] [2023-08-03T18:18:55.855Z] > refreshing access token with scopes: []
+[debug] [2023-08-03T18:18:55.858Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-03T18:18:55.858Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-03T18:19:03.731Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-08-03T18:19:03.731Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-03T18:19:03.732Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-67d4c/adminSdkConfig [none]
+[debug] [2023-08-03T18:19:03.892Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-08-03T18:19:03.893Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-08-03T18:19:08.133Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-67d4c/adminSdkConfig 401
+[debug] [2023-08-03T18:19:08.133Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-67d4c/adminSdkConfig {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-08-03T18:19:08.134Z] Failed to get Admin SDK config for clone-67d4c, falling back to cache Failed to get Admin SDK for Firebase project clone-67d4c. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project clone-67d4c. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}},"response":{"statusCode":401}},"exit":1,"message":"HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":401},"status":500}
+[debug] [2023-08-03T18:19:08.165Z] > refreshing access token with scopes: []
+[debug] [2023-08-03T18:19:08.166Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-03T18:19:08.166Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-03T18:19:12.019Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-08-03T18:19:12.019Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-03T18:19:12.020Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-67d4c/sites 
+[debug] [2023-08-03T18:19:17.046Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-67d4c/sites 401
+[debug] [2023-08-03T18:19:17.046Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-67d4c/sites {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-08-03T18:19:17.047Z] Failed to list hosting sites
+[debug] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-08-03T18:19:17.047Z] > refreshing access token with scopes: []
+[debug] [2023-08-03T18:19:17.048Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-03T18:19:17.048Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-03T18:19:17.390Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-08-03T18:19:17.390Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-03T18:19:17.390Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-67d4c/webApps/-/config [none]
+[debug] [2023-08-03T18:19:17.952Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-67d4c/webApps/-/config 401
+[debug] [2023-08-03T18:19:17.953Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-67d4c/webApps/-/config {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-08-03T18:19:17.953Z] fetchWebSetup error: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[warn] !  hosting: Using web app configuration from cache. 
+[debug] [2023-08-03T18:19:17.957Z] > refreshing access token with scopes: []
+[debug] [2023-08-03T18:19:17.957Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-03T18:19:17.958Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-03T18:19:18.287Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-08-03T18:19:18.288Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-03T18:19:18.288Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-67d4c [none]
+[debug] [2023-08-03T18:19:18.648Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-67d4c 401
+[debug] [2023-08-03T18:19:18.648Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-67d4c {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-08-03T18:19:18.649Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[info] i  hosting[clone-67d4c]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[clone-67d4c]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-08-03T18:19:18.721Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-08-03T18:19:18.722Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-08-03T18:19:18.723Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\ASUS\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\ASUS\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-08-03T18:19:19.000Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-08-03T18:19:19.003Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "D:\Projects\Amazon Website\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\Projects\\Amazon Website\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2023-08-03T18:19:19.038Z] Validating nodejs source
+[debug] [2023-08-03T18:19:22.113Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.14.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-08-03T18:19:22.165Z] Building nodejs source
+[debug] [2023-08-03T18:19:22.166Z] Failed to find version of module node: reached end of search path D:\Projects\Amazon Website\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-08-03T18:19:22.176Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-08-03T18:19:22.244Z] Found firebase-functions binary at 'D:\Projects\Amazon Website\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8613
+
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-08-03T18:21:17.032Z] [work-queue] {"queuedWork":["/clone-67d4c/us-central1/api-2023-08-03T18:21:17.032Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-08-03T18:21:17.032Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-67d4c/us-central1/api-2023-08-03T18:21:17.032Z"],"workRunningCount":1}
+[debug] [2023-08-03T18:21:17.034Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-08-03T18:21:17.348Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-08-03T18:21:23.191Z] [work-queue] {"queuedWork":["/clone-67d4c/us-central1/api-2023-08-03T18:21:23.191Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-08-03T18:21:23.192Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-67d4c/us-central1/api-2023-08-03T18:21:23.191Z"],"workRunningCount":1}
+[debug] [2023-08-03T18:21:23.193Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
