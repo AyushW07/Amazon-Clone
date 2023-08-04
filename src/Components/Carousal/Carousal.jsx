@@ -7,6 +7,10 @@ function Carousal() {
   const images = [
     {
       image:
+        "https://images-eu.ssl-images-amazon.com/images/G/31/prime/AugART/Acq/updated_date_ho_2._CB599282273_.jpg",
+    },
+    {
+      image:
         "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Consumables/SVD/Aug/Hero/PC_Hero_REC_3000x1200._CB599416221_.jpg",
     },
     {

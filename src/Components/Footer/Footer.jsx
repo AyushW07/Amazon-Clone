@@ -14,17 +14,31 @@ function Footer() {
         <div className={styles.footer_up}>
           <div className={styles.title}>
             <h4>Get to Know Us</h4>
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>Press Releases</li>
-            <li>Amazon Science</li>
+            <li>
+              <a href="https://www.aboutamazon.in/">About Us</a>
+            </li>
+            <li>
+              <a href="https://amazon.jobs/en/">Careers</a>
+            </li>
+            <li>
+              <a href="https://press.aboutamazon.in/">Press Releases</a>
+            </li>
+            <li>
+              <a href="https://www.amazon.science/">Amazon Science</a>
+            </li>
           </div>
 
           <div className={styles.title}>
             <h4>Connect with Us</h4>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
+            <li>
+              <a href="https://www.facebook.com/AmazonIN">Facebook</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/AmazonIN">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/amazondotin/">Instagram</a>
+            </li>
           </div>
 
           <div className={styles.title}>
@@ -52,11 +66,13 @@ function Footer() {
 
         <div className={styles.footer_down}>
           <div className={styles.logo}>
-            <img
-              className={styles.amazon_logo}
-              src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-              alt="Amazon Logo"
-            />
+            <a href="#">
+              <img
+                className={styles.amazon_logo}
+                src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+                alt="Amazon Logo"
+              />
+            </a>
           </div>
           <div className={styles.copy}>
             &copy; 2023 All rights reserved. <pre />

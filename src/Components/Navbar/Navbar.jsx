@@ -115,7 +115,11 @@ function Navbar() {
             <MenuIcon className={styles.menu_icon} />
             All
           </li>
-          <li>Amazon miniTV</li>
+          <li>
+            <a href="https://www.amazon.in/minitv" target="_blank">
+              Amazon miniTV
+            </a>
+          </li>
           <li>Sell</li>
           <li>Amazon Pay</li>
           <li>Gift Cards</li>
@@ -127,96 +131,99 @@ function Navbar() {
         </ul>
       </nav>
 
-      <aside className={`${styles.sidebar} ${isOpen ? styles.open : ""}`}>
-        <CloseIcon className={styles.close_icon} onClick={handleMenu} />
-        <div className={styles.ext_container}>
-          <div className={styles.users}>
-            <AccountCircleIcon className={styles.users_icon} />
-            Hello, {!user ? "Guest" : user.email}
-          </div>
+      <div className={isOpen ? styles.black : ""}>
+        <aside className={`${styles.sidebar} ${isOpen ? styles.open : ""}`}>
+          <CloseIcon className={styles.close_icon} onClick={handleMenu} />
+          <div className={styles.ext_container}>
+            <div className={styles.users}>
+              <AccountCircleIcon className={styles.users_icon} />
+              Hello, {!user ? "Guest" : user.email}
+            </div>
 
-          <div className={styles.container}>
-            <div className={styles.content}>
-              <h3>Trending</h3>
-              <ul>
-                <li>Best Seller</li>
-                <li>New Releases</li>
-                <li>Movers and Shakers</li>
-              </ul>
-            </div>
-            <div className={styles.content}>
-              <h3>Digital Content And Devices</h3>
-              <ul>
-                <li>
-                  Echo & Alexa
-                  <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
-                </li>
-                <li>
-                  Fire TV <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
-                </li>
-                <li>
-                  Kindle E-Readers & eBooks{" "}
-                  <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
-                </li>
-                <li>
-                  Audible Audiobooks{" "}
-                  <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
-                </li>
-                <li>
-                  Amazon Prime Video{" "}
-                  <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
-                </li>
-                <li>
-                  Amazon Prime Music{" "}
-                  <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
-                </li>
-              </ul>
-            </div>
-            <div className={styles.content}>
-              <h3>Shop By Category</h3>
-              <ul>
-                <li>
-                  Mobiles, Computers{" "}
-                  <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
-                </li>
-                <li>
-                  TV, Appliances, Electronics{" "}
-                  <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
-                </li>
-                <li>
-                  Men's Fashion{" "}
-                  <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
-                </li>
-                <li>
-                  Women's Fashion{" "}
-                  <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
-                </li>
-                <li>See All</li>
-              </ul>
-            </div>
-            <div className={styles.content}>
-              <h3>Programs & Features</h3>
-              <ul>
-                <li>
-                  Gift Cards & Mobile Recharges{" "}
-                  <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
-                </li>
-                <li>Amazon Launchpad</li>
-                <li>Flight Tickets</li>
-                <li>Clearance store</li>
-              </ul>
-            </div>
-            <div className={styles.content}>
-              <h3>Help & Settings</h3>
-              <ul>
-                <li>Your Account</li>
-                <li>Customer Service</li>
-                <li>Sign Out</li>
-              </ul>
+            <div className={styles.container}>
+              <div className={styles.content}>
+                <h3>Trending</h3>
+                <ul>
+                  <li>Best Seller</li>
+                  <li>New Releases</li>
+                  <li>Movers and Shakers</li>
+                </ul>
+              </div>
+              <div className={styles.content}>
+                <h3>Digital Content And Devices</h3>
+                <ul>
+                  <li>
+                    Echo & Alexa
+                    <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
+                  </li>
+                  <li>
+                    Fire TV{" "}
+                    <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
+                  </li>
+                  <li>
+                    Kindle E-Readers & eBooks{" "}
+                    <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
+                  </li>
+                  <li>
+                    Audible Audiobooks{" "}
+                    <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
+                  </li>
+                  <li>
+                    Amazon Prime Video{" "}
+                    <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
+                  </li>
+                  <li>
+                    Amazon Prime Music{" "}
+                    <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.content}>
+                <h3>Shop By Category</h3>
+                <ul>
+                  <li>
+                    Mobiles, Computers{" "}
+                    <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
+                  </li>
+                  <li>
+                    TV, Appliances, Electronics{" "}
+                    <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
+                  </li>
+                  <li>
+                    Men's Fashion{" "}
+                    <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
+                  </li>
+                  <li>
+                    Women's Fashion{" "}
+                    <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
+                  </li>
+                  <li>See All</li>
+                </ul>
+              </div>
+              <div className={styles.content}>
+                <h3>Programs & Features</h3>
+                <ul>
+                  <li>
+                    Gift Cards & Mobile Recharges{" "}
+                    <KeyboardArrowRightIcon sx={{ fontSize: "large" }} />
+                  </li>
+                  <li>Amazon Launchpad</li>
+                  <li>Flight Tickets</li>
+                  <li>Clearance store</li>
+                </ul>
+              </div>
+              <div className={styles.content}>
+                <h3>Help & Settings</h3>
+                <ul>
+                  <li>Your Account</li>
+                  <li>Customer Service</li>
+                  <li>Sign Out</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
     </>
   );
 }

@@ -153,15 +153,32 @@
   cursor: pointer;
 }
 
+.navbar_down ul li a {
+  text-decoration: none;
+}
+
+.navbar_down ul li a:visited {
+  color: white;
+}
+
 .sidebar {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: -100%;
-  transition: left 0.3s ease;
+  transition: left 0.5s ease;
   z-index: 100;
+}
+
+.black {
   background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .open {

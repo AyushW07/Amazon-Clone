@@ -40,6 +40,14 @@ footer > a {
   font-weight: 500;
 }
 
+.title > li a {
+  text-decoration: none;
+}
+
+.title > li a:visited {
+  color: lightgray;
+}
+
 .footer_down {
   border-top: 1px solid darkgrey;
   background-color: #131921;
