@@ -29,7 +29,7 @@ function Navbar() {
   return (
     <>
       <nav className={styles.navbar_up}>
-        <Link to="/homepage">
+        <Link to="/">
           <img
             className={styles.logo}
             src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
@@ -37,7 +37,7 @@ function Navbar() {
           />
         </Link>
 
-        <Link to="/homepage">
+        <Link to="/">
           <div className={styles.location}>
             <LocationOnOutlinedIcon />
             <div className={styles.address}>
@@ -65,7 +65,7 @@ function Navbar() {
         </div>
 
         <div className={styles.links}>
-          <Link to="/homepage" className={styles.linktag}>
+          <Link to="/" className={styles.linktag}>
             <div className={styles.language}>
               <img
                 className={styles.flag}
@@ -82,7 +82,7 @@ function Navbar() {
             </div>
           </Link>
 
-          <Link to={!user && "/"} className={styles.linktag}>
+          <Link to={!user && "/login"} className={styles.linktag}>
             <div onClick={handleAuth} className={styles.links_options}>
               <span className={styles.line1}>
                 Hello, {!user ? "Guest" : user.email}
@@ -93,7 +93,7 @@ function Navbar() {
             </div>
           </Link>
 
-          <Link to="/homepage" className={styles.linktag}>
+          <Link to="/" className={styles.linktag}>
             <div className={styles.links_options}>
               <span className={styles.line1}>Returns</span>
               <span className={styles.line2}>& Orders</span>

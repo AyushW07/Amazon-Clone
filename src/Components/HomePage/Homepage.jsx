@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Homepage.module.css";
 import Products from "../Products/Products";
 import Carousal from "../Carousal/Carousal";
+import Slider from "../Slider/Slider";
 
 function Homepage() {
   return (
@@ -51,6 +52,8 @@ function Homepage() {
           image="	https://m.media-amazon.com/images/I/81gC7frRJyL._AC_UY327_FMwebp_QL65_.jpg"
         />
       </div>
+
+      {/* <Slider /> */}
 
       <div className={styles.home_row}>
         <Products
