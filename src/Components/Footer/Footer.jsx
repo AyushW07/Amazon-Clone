@@ -75,8 +75,9 @@ function Footer() {
             </a>
           </div>
           <div className={styles.copy}>
-            &copy; 2023 All rights reserved. <pre />
-            <span>Amazon Clone by Ayush</span>
+            &copy; Amazon Clone 2023 All rights reserved
+            <pre />
+            <span>by Ayush</span>
           </div>
         </div>
       </div>

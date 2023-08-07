@@ -1,0 +1,106 @@
+.CardProducts {
+  width: 100%;
+  margin: 15px;
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  z-index: 1;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  overflow: hidden;
+  width: 320px;
+  height: 390px;
+  position: relative;
+}
+
+.box h3 {
+  margin-left: 5px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.box a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #007185;
+  letter-spacing: -0.5px;
+  margin-left: 5px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.box a:hover {
+  color: #d79743;
+  text-decoration: underline;
+}
+
+.box a:visited {
+  color: none;
+}
+
+.inner_box {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  margin: 5px;
+  cursor: pointer;
+  width: 150px;
+  height: 140px;
+}
+
+.image img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.image h6 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.single_box {
+  background-color: white;
+  padding: 20px;
+  overflow: hidden;
+  width: 320px;
+  height: 390px;
+  position: relative;
+}
+
+.single_box img {
+  height: 303px;
+  width: 300px;
+  object-fit: contain;
+}
+
+.single_box h3 {
+  margin-bottom: 15px;
+}
+
+.single_box a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #007185;
+  letter-spacing: -0.5px;
+  margin-left: 5px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.single_box a:hover {
+  color: #d79743;
+  text-decoration: underline;
+}
+
+.single_box a:visited {
+  color: none;
+}

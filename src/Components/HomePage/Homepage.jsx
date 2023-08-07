@@ -2,11 +2,16 @@ import React from "react";
 import styles from "./Homepage.module.css";
 import Products from "../Products/Products";
 import Carousal from "../Carousal/Carousal";
+import CardProducts from "../CardProducts/CardProducts";
 
 function Homepage() {
   return (
     <div className={styles.homepage}>
       <Carousal />
+
+      <div className={styles.ProductCards}>
+        <CardProducts />
+      </div>
 
       <div className={styles.home_row}>
         <Products
