@@ -80,8 +80,7 @@ function Payment() {
           </div>
           <div className={styles.address}>
             <p>{user?.email}</p>
-            <p>Durga Nagar</p>
-            <p>Tumsar, MH</p>
+            <p>Nagpur, MH</p>
           </div>
         </div>
 
