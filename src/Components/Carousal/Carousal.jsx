@@ -18,8 +18,7 @@ function Carousal() {
         "https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/Launches23/OnePlus/BulletsZ2ANC/Teaser/Aug/D89396927_GW_DesktopTallHero_3000x1200._CB599109953_.jpg",
     },
     {
-      image:
-        "https://images-eu.ssl-images-amazon.com/images/G/31/img21/Jewellery/2023/Gateway/Aug/ATF/1st_Aug/RAKHI_PCV._CB599101972_.jpg",
+      image: "https://m.media-amazon.com/images/I/719vEkPyLWL._SX3000_.jpg",
     },
     {
       image:
@@ -31,7 +30,7 @@ function Carousal() {
     },
     {
       image:
-        "https://images-eu.ssl-images-amazon.com/images/G/31/img23/CEPC/July/Bestselling_Tallhero_3000x1200._CB599101347_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img23/AugART2023/GW/PC_Rec_Hero_3000x1200._CB599598174_.jpg",
     },
     {
       image:
